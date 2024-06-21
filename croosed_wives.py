@@ -18,6 +18,6 @@ plain=cipher
 i=5
 for key in MyF[::-1]:
     print('the ',i);i-=1;
-    plain=getPlain(plain,key[1],key[0])
+    plain=getPlain(plain,key[1],N)
 # pow(a,p-1,p)=1 so pow (a,p,p)=p
 print(long_to_bytes(plain))
